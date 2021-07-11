@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Spin My Wheel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <body>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div class="intro">
+      <div class="error"></div>
+      <h1>Spinning Wheel</h1>
+      <div class="instructions">
+        <p>
+          If on <span class="imp">desktop</span>, click the wheel to spin it.
+          Hold down your click for as long or as short as you want for different
+          spin speed
+        </p>
+        <p>
+          On <span class="imp">mobile</span>, spin the wheel by using your
+          finger to drag it from left to right (do not tap, swipe)
+        </p>
+      </div>
+    </div>
+    <div id="wheel">
+      <div class="wheel-circle">
+        <ul>
+          <li data-value="3" data-start="1"><span>3</span></li>
+          <li data-value="6" data-start="2"><span>6</span></li>
+          <li data-value="1" data-start="3"><span>1</span></li>
+          <li data-value="10" data-start="4"><span>10</span></li>
+          <li data-value="9" data-start="5"><span>9</span></li>
+          <li data-value="2" data-start="6"><span>2</span></li>
+          <li data-value="8" data-start="7"><span>8</span></li>
+          <li data-value="7" data-start="8"><span>7</span></li>
+          <li data-value="5" data-start="9"><span>5</span></li>
+          <li data-value="4" data-start="10"><span>4</span></li>
+        </ul>
+      </div>
+      <div class="pointer"></div>
+      <div class="score">
+        <h3>Next Number Prediction *drumroll*</h3>
+        <span class="predict"></span>
+        <h3>Recent Answers</h3>
+        <span class="prevans"></span>
+        <h3>Prediction Accuracy -</h3>
+        <span class="accuracy"></span>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
